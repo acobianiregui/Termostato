@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Pic32Ini.c UART.c main.c sensor.c ventilador.c bombilla.c
+SOURCEFILES_QUOTED_IF_SPACED=TftDriver/spi.c TftDriver/TftDriver.c TftDriver/logo_ventilador.c TftDriver/DefaultFonts.c Pic32Ini.c UART.c main.c sensor.c ventilador.c bombilla.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/ventilador.o ${OBJECTDIR}/bombilla.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Pic32Ini.o.d ${OBJECTDIR}/UART.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/sensor.o.d ${OBJECTDIR}/ventilador.o.d ${OBJECTDIR}/bombilla.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/TftDriver/spi.o ${OBJECTDIR}/TftDriver/TftDriver.o ${OBJECTDIR}/TftDriver/logo_ventilador.o ${OBJECTDIR}/TftDriver/DefaultFonts.o ${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/ventilador.o ${OBJECTDIR}/bombilla.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/TftDriver/spi.o.d ${OBJECTDIR}/TftDriver/TftDriver.o.d ${OBJECTDIR}/TftDriver/logo_ventilador.o.d ${OBJECTDIR}/TftDriver/DefaultFonts.o.d ${OBJECTDIR}/Pic32Ini.o.d ${OBJECTDIR}/UART.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/sensor.o.d ${OBJECTDIR}/ventilador.o.d ${OBJECTDIR}/bombilla.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/ventilador.o ${OBJECTDIR}/bombilla.o
+OBJECTFILES=${OBJECTDIR}/TftDriver/spi.o ${OBJECTDIR}/TftDriver/TftDriver.o ${OBJECTDIR}/TftDriver/logo_ventilador.o ${OBJECTDIR}/TftDriver/DefaultFonts.o ${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/ventilador.o ${OBJECTDIR}/bombilla.o
 
 # Source Files
-SOURCEFILES=Pic32Ini.c UART.c main.c sensor.c ventilador.c bombilla.c
+SOURCEFILES=TftDriver/spi.c TftDriver/TftDriver.c TftDriver/logo_ventilador.c TftDriver/DefaultFonts.c Pic32Ini.c UART.c main.c sensor.c ventilador.c bombilla.c
 
 
 
@@ -101,6 +101,30 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/TftDriver/spi.o: TftDriver/spi.c  .generated_files/flags/default/5904773ce323ffa45aecdd094f5ed65c45910ad5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/spi.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/spi.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/spi.o.d" -o ${OBJECTDIR}/TftDriver/spi.o TftDriver/spi.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/TftDriver.o: TftDriver/TftDriver.c  .generated_files/flags/default/eb794a71caf4d3da9c926a498edcf21d5a9231d4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/TftDriver.o.d" -o ${OBJECTDIR}/TftDriver/TftDriver.o TftDriver/TftDriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/logo_ventilador.o: TftDriver/logo_ventilador.c  .generated_files/flags/default/a3581ee4369728e774521a99c27e74ced1a1113f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/logo_ventilador.o.d" -o ${OBJECTDIR}/TftDriver/logo_ventilador.o TftDriver/logo_ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/DefaultFonts.o: TftDriver/DefaultFonts.c  .generated_files/flags/default/a00b40d0dae2f51632dbb7b5523650e19943512a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/DefaultFonts.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/DefaultFonts.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/DefaultFonts.o.d" -o ${OBJECTDIR}/TftDriver/DefaultFonts.o TftDriver/DefaultFonts.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
 ${OBJECTDIR}/Pic32Ini.o: Pic32Ini.c  .generated_files/flags/default/cac003e412236fa40891f09456e0a9af061da8f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/Pic32Ini.o.d 
@@ -138,6 +162,30 @@ ${OBJECTDIR}/bombilla.o: bombilla.c  .generated_files/flags/default/bc788b80abe9
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/bombilla.o.d" -o ${OBJECTDIR}/bombilla.o bombilla.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 else
+${OBJECTDIR}/TftDriver/spi.o: TftDriver/spi.c  .generated_files/flags/default/a138d8fd23bf8954a27b2191c5c25638669ec918 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/spi.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/spi.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/spi.o.d" -o ${OBJECTDIR}/TftDriver/spi.o TftDriver/spi.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/TftDriver.o: TftDriver/TftDriver.c  .generated_files/flags/default/ee311da3ff8cddaa3e47bc1e4c3bdd04ff8f83d6 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/TftDriver.o.d" -o ${OBJECTDIR}/TftDriver/TftDriver.o TftDriver/TftDriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/logo_ventilador.o: TftDriver/logo_ventilador.c  .generated_files/flags/default/3a604176cc79f43e08df5d892eb80ec1a885172c .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/logo_ventilador.o.d" -o ${OBJECTDIR}/TftDriver/logo_ventilador.o TftDriver/logo_ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/DefaultFonts.o: TftDriver/DefaultFonts.c  .generated_files/flags/default/806041ecb1f0bf6f5396634ad427e4b7d57385e8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/DefaultFonts.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/DefaultFonts.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/DefaultFonts.o.d" -o ${OBJECTDIR}/TftDriver/DefaultFonts.o TftDriver/DefaultFonts.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
 ${OBJECTDIR}/Pic32Ini.o: Pic32Ini.c  .generated_files/flags/default/b9dd77751ed5e776bd56379ea4bb801def1b1dc3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/Pic32Ini.o.d 

@@ -12,6 +12,9 @@
 extern "C" {
 #endif
 
+#define SYSCLK 40000000L // Reloj del sistema a 40 MHz
+#define PBCLK   5000000L
+    
 void InicializarReloj(void);
 
 

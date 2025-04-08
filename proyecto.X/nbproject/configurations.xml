@@ -12,6 +12,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="TftDriver" displayName="TftDriver" projectFiles="true">
+        <itemPath>TftDriver/spi.c</itemPath>
+        <itemPath>TftDriver/TftDriver.c</itemPath>
+        <itemPath>TftDriver/logo_ventilador.c</itemPath>
+        <itemPath>TftDriver/DefaultFonts.c</itemPath>
+        <itemPath>TftDriver/logo_ventilador.h</itemPath>
+      </logicalFolder>
       <itemPath>Pic32Ini.c</itemPath>
       <itemPath>Pic32Ini.h</itemPath>
       <itemPath>UART.c</itemPath>
@@ -211,6 +218,12 @@
         <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
+      <PK3OBPlatformTool>
+        <property key="firmware.download.all" value="false"/>
+      </PK3OBPlatformTool>
+      <Tool>
+        <property key="firmware.download.all" value="false"/>
+      </Tool>
     </conf>
   </confs>
 </configurationDescriptor>
