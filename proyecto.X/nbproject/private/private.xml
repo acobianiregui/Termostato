@@ -4,6 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/34648/Desktop/labs_micro/proyecto_final/proyecto.X/main.c</file>
+            <file>file:/C:/Users/34648/Desktop/labs_micro/proyecto_final/proyecto.X/Pic32Ini.c</file>
+            <file>file:/C:/Users/34648/Desktop/labs_micro/proyecto_final/proyecto.X/sensor.c</file>
+            <file>file:/C:/Users/34648/Desktop/labs_micro/proyecto_final/proyecto.X/Pic32Ini.h</file>
+            <file>file:/C:/Users/34648/Desktop/labs_micro/proyecto_final/proyecto.X/TftDriver/TftDriver.c</file>
             <file>file:/C:/Users/34648/Desktop/labs_micro/proyecto_final/proyecto.X/sensor.h</file>
         </group>
     </open-files>

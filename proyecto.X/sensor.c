@@ -3,6 +3,7 @@
 #include <math.h>
 #include "UART.h"
 #include "Pic32Ini.h"
+#include "TftDriver/TftDriver.h"
 //Configuracion del sensor de temperatura
 //Manejar conversor AD en automatico con Timer3
 
@@ -14,13 +15,14 @@ void initSensor(){
     //El sensor térmico a AN0-> RA0
     TRISA |=2; //Entrada sensor
     AD1CON1=0;//Apagar conversor
+    AD1CON1bits.SSRC = 2;//Timer3
+    AD1CON1bits.ASAM = 1;//Auto Sampling
+    
     AD1CON2= 3<<2;//Solo hay un canal y 4 medidas (SMPI=3 +1)
     AD1CON3= 0x200; //(TSAMP y TADC) este valor me afecta mucho cuando T=1s
     
     AD1CHS=0x00010000; // AN1 a 0V
     
-    AD1CON1bits.SSRC = 2;//Timer3
-    AD1CON1bits.ASAM = 1;//Auto Sampling
     IFS0bits.AD1IF = 0; // Borro el flag
     IEC0bits.AD1IE = 1; // Habilito
     IPC5bits.AD1IP = 2; // Prioridad 2
@@ -29,8 +31,8 @@ void initSensor(){
     
     T3CON = 0;
     TMR3 = 0;
-    PR3 = 19062; //Muestrea cada 1seg
-    T3CON= 0x0070; //Apagado y div 7
+    PR3 = 19531; //Muestrea cada 250ms
+    T3CON= 0x0070; //Apagado y div 5
 }
 void startADC(){
     T3CON |=0x8000;
@@ -60,7 +62,14 @@ void InterrupcionADC(void) {
     //Ahora lo que se quiera hacer con la media
     
 }
-
+int existeMedia(){
+    int sol;
+    asm("di");
+    sol=hay_media;
+    hay_media=0;
+    asm("ei");
+    return sol;
+}
 
 float getTemperatura(){
     float sol;

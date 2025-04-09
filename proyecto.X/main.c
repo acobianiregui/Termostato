@@ -13,6 +13,8 @@
 
 void initDisplay();
 void init1();
+char mensaje_temp[32]={0};
+
 int main(){
     //Inicicializaciones
     init1();
@@ -21,7 +23,6 @@ int main(){
     InicializarUART(9600);
     //initBombilla();
     //startBombilla();
-    //setBrillo(2500*9);
     initDisplay();
     
     //Habilitar interrupciones
@@ -29,11 +30,25 @@ int main(){
     asm("ei");
     int act; int ant=(PORTB>>5)&1;
     char temp [TAMANO_COLA]={0};
+    float t=0;
+    int j=0;
     while(33){
        act=(PORTB>>5)&1;
+       //Actualización automatica en el display 
+       if(existeMedia()){
+           t=getTemperatura();
+           setColor(VGA_BLACK);
+           fillRect(0,40,158,60);
+           setColor(VGA_WHITE);
+           sprintf(mensaje_temp, "Hay %.2f grados",t );
+           print(mensaje_temp, LEFT, 40,0);
+           j=controlar_brillo(30,t);
+           sprintf(temp,"%d",j);
+           putsUART(temp);
+       }
        if ((act!=ant)&&(act==0)){
-           float temperatura=getTemperatura();
-           sprintf(temp,"%.2f",temperatura);
+           
+           sprintf(temp,"%.2f",t);
            putsUART(temp);
            putsUART(" Celsius \n\r");
            setBrillo(2500*20);

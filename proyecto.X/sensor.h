@@ -17,6 +17,7 @@ void InterrupcionADC(void);
 void startADC();
 float conversionVaT(float Vmedida);
 float getTemperatura();
+int existeMedia();
 
 #ifdef	__cplusplus
 }

@@ -14,7 +14,8 @@ extern "C" {
 
 void initBombilla();
 void startBombilla();
-void setBrillo(int brillo);
+void setBrillo(int porcentaje);
+int controlar_brillo(float temperatura_deseada, float temperatura_actual);
 
 
 #ifdef	__cplusplus
