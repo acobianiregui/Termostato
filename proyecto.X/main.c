@@ -21,8 +21,9 @@ int main(){
     initSensor();
     startADC();
     InicializarUART(9600);
-    //initBombilla();
-    //startBombilla();
+    initBombilla();
+    startBombilla();
+    //stopBombilla();
     initDisplay();
     
     //Habilitar interrupciones
@@ -42,7 +43,9 @@ int main(){
            setColor(VGA_WHITE);
            sprintf(mensaje_temp, "Hay %.2f grados",t );
            print(mensaje_temp, LEFT, 40,0);
+           //Probar el PI
            j=controlar_brillo(30,t);
+           //setBrillo(j);
            sprintf(temp,"%d",j);
            putsUART(temp);
        }
@@ -51,7 +54,7 @@ int main(){
            sprintf(temp,"%.2f",t);
            putsUART(temp);
            putsUART(" Celsius \n\r");
-           setBrillo(2500*20);
+           setBrillo(200);
        } 
        ant=act;
     }

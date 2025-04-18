@@ -3,25 +3,26 @@
 //Timer 3 ya esta ocupado asi que el Timer 2 para la bombilla o ventilador
 //Se ha decicido Timer2 para bombilla e interrupciones para ventilador
 #define PERIODO 50000
-
+int alto=0;
 void initBombilla(){
     //Pines
     //En registro B15
     //OC1 usa RB15
-    ANSELC &=(1<<5);
-    TRISC &=(1<<5);
+    ANSELC &=~(1<<4);
+    TRISC &=~(1<<4);
+    LATC &= ~(1<<4);
     
     //Remapeo
     SYSKEY=0xAA996655;
     SYSKEY=0x556699AA;
-    RPC5R = 5;
+    RPC4R = 5;
     SYSKEY=0xFE0;
     
     //Configuracion OC1
-    OC1CON=0; //Primero apagado
-    OC1R=2500;  // A DECIDIR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    OC1RS=2500;
-    OC1CON =0x0006; //off, PWM sin faltas
+    OC3CON=0; //Primero apagado
+    OC3R=2500;  // A DECIDIR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    OC3RS=2500;
+    OC3CON =0x0006; //off, PWM sin faltas
     
     T2CON = 0;
     TMR2 = 0;
@@ -67,17 +68,16 @@ int controlar_brillo(float temperatura_deseada, float temperatura_actual) {
 }
 
 
-
 void setBrillo(int porcentaje){
-    int alto=porcentaje*PERIODO;
-    OC1RS=alto;
+    alto=porcentaje*PERIODO/100;
+    OC3RS=alto;
 }
 void startBombilla(){
-    OC1CON |= 0x8000;
+    OC3CON |= 0x8000;
     TMR2=0; //Por si acaso
     T2CON |=0x8000;
 }
 void stopBombilla(){
-    OC1CON &= ~0x8000;
+    OC3CON &= ~0x8000;
     T2CON  &= ~0x8000;
 }
