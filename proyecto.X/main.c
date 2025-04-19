@@ -9,7 +9,7 @@
 #include "sensor.h"
 #include "TftDriver/TftDriver.h"
 #include "bombilla.h"
-
+#include "ventilador.h"
 
 void initDisplay();
 void init1();
@@ -25,7 +25,6 @@ int main(){
     startBombilla();
     //stopBombilla();
     initDisplay();
-    
     //Habilitar interrupciones
     INTCON |= (1<<12);
     asm("ei");
@@ -33,7 +32,7 @@ int main(){
     char temp [TAMANO_COLA]={0};
     float t=0;
     int j=0;
-    while(33){
+    while(33){       
        act=(PORTB>>5)&1;
        //Actualización automatica en el display 
        if(existeMedia()){
@@ -44,10 +43,11 @@ int main(){
            sprintf(mensaje_temp, "Hay %.2f grados",t );
            print(mensaje_temp, LEFT, 40,0);
            //Probar el PI
-           j=controlar_brillo(30,t);
+           j=controlar_brillo(31,t);
            //setBrillo(j);
            sprintf(temp,"%d",j);
-           putsUART(temp);
+           //putsUART(temp);
+           setBrillo(j);
        }
        if ((act!=ant)&&(act==0)){
            

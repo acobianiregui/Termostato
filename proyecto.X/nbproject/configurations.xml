@@ -29,6 +29,7 @@
       <itemPath>ventilador.c</itemPath>
       <itemPath>bombilla.c</itemPath>
       <itemPath>bombilla.h</itemPath>
+      <itemPath>ventilador.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -32,7 +32,7 @@ void initSensor(){
     T3CON = 0;
     TMR3 = 0;
     PR3 = 19531; //Muestrea cada 250ms
-    T3CON= 0x0070; //Apagado y div 5
+    T3CON= 0x0060; //Apagado y div 5
 }
 void startADC(){
     T3CON |=0x8000;
