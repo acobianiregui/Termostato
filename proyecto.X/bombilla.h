@@ -17,7 +17,7 @@ void startBombilla();
 void setBrillo(int porcentaje);
 int controlar_brillo(float temperatura_deseada, float temperatura_actual);
 void stopBombilla();
-
+int getBrillo();
 
 #ifdef	__cplusplus
 }

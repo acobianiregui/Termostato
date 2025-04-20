@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=TftDriver/spi.c TftDriver/TftDriver.c TftDriver/logo_ventilador.c TftDriver/DefaultFonts.c Pic32Ini.c UART.c main.c sensor.c ventilador.c bombilla.c
+SOURCEFILES_QUOTED_IF_SPACED=TftDriver/spi.c TftDriver/TftDriver.c TftDriver/DefaultFonts.c Pic32Ini.c UART.c main.c sensor.c bombilla.c TftDriver/bulb.c TftDriver/fan.c ventilador.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/TftDriver/spi.o ${OBJECTDIR}/TftDriver/TftDriver.o ${OBJECTDIR}/TftDriver/logo_ventilador.o ${OBJECTDIR}/TftDriver/DefaultFonts.o ${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/ventilador.o ${OBJECTDIR}/bombilla.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/TftDriver/spi.o.d ${OBJECTDIR}/TftDriver/TftDriver.o.d ${OBJECTDIR}/TftDriver/logo_ventilador.o.d ${OBJECTDIR}/TftDriver/DefaultFonts.o.d ${OBJECTDIR}/Pic32Ini.o.d ${OBJECTDIR}/UART.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/sensor.o.d ${OBJECTDIR}/ventilador.o.d ${OBJECTDIR}/bombilla.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/TftDriver/spi.o ${OBJECTDIR}/TftDriver/TftDriver.o ${OBJECTDIR}/TftDriver/DefaultFonts.o ${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/bombilla.o ${OBJECTDIR}/TftDriver/bulb.o ${OBJECTDIR}/TftDriver/fan.o ${OBJECTDIR}/ventilador.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/TftDriver/spi.o.d ${OBJECTDIR}/TftDriver/TftDriver.o.d ${OBJECTDIR}/TftDriver/DefaultFonts.o.d ${OBJECTDIR}/Pic32Ini.o.d ${OBJECTDIR}/UART.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/sensor.o.d ${OBJECTDIR}/bombilla.o.d ${OBJECTDIR}/TftDriver/bulb.o.d ${OBJECTDIR}/TftDriver/fan.o.d ${OBJECTDIR}/ventilador.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/TftDriver/spi.o ${OBJECTDIR}/TftDriver/TftDriver.o ${OBJECTDIR}/TftDriver/logo_ventilador.o ${OBJECTDIR}/TftDriver/DefaultFonts.o ${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/ventilador.o ${OBJECTDIR}/bombilla.o
+OBJECTFILES=${OBJECTDIR}/TftDriver/spi.o ${OBJECTDIR}/TftDriver/TftDriver.o ${OBJECTDIR}/TftDriver/DefaultFonts.o ${OBJECTDIR}/Pic32Ini.o ${OBJECTDIR}/UART.o ${OBJECTDIR}/main.o ${OBJECTDIR}/sensor.o ${OBJECTDIR}/bombilla.o ${OBJECTDIR}/TftDriver/bulb.o ${OBJECTDIR}/TftDriver/fan.o ${OBJECTDIR}/ventilador.o
 
 # Source Files
-SOURCEFILES=TftDriver/spi.c TftDriver/TftDriver.c TftDriver/logo_ventilador.c TftDriver/DefaultFonts.c Pic32Ini.c UART.c main.c sensor.c ventilador.c bombilla.c
+SOURCEFILES=TftDriver/spi.c TftDriver/TftDriver.c TftDriver/DefaultFonts.c Pic32Ini.c UART.c main.c sensor.c bombilla.c TftDriver/bulb.c TftDriver/fan.c ventilador.c
 
 
 
@@ -113,12 +113,6 @@ ${OBJECTDIR}/TftDriver/TftDriver.o: TftDriver/TftDriver.c  .generated_files/flag
 	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/TftDriver.o.d" -o ${OBJECTDIR}/TftDriver/TftDriver.o TftDriver/TftDriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/TftDriver/logo_ventilador.o: TftDriver/logo_ventilador.c  .generated_files/flags/default/a3581ee4369728e774521a99c27e74ced1a1113f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/TftDriver" 
-	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o.d 
-	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/logo_ventilador.o.d" -o ${OBJECTDIR}/TftDriver/logo_ventilador.o TftDriver/logo_ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/TftDriver/DefaultFonts.o: TftDriver/DefaultFonts.c  .generated_files/flags/default/a00b40d0dae2f51632dbb7b5523650e19943512a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/TftDriver" 
 	@${RM} ${OBJECTDIR}/TftDriver/DefaultFonts.o.d 
@@ -149,17 +143,29 @@ ${OBJECTDIR}/sensor.o: sensor.c  .generated_files/flags/default/56915645895477d0
 	@${RM} ${OBJECTDIR}/sensor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/sensor.o.d" -o ${OBJECTDIR}/sensor.o sensor.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/ventilador.o: ventilador.c  .generated_files/flags/default/56e483543afb852d712c17fe1f80942d82dd7c86 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/ventilador.o.d 
-	@${RM} ${OBJECTDIR}/ventilador.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/ventilador.o.d" -o ${OBJECTDIR}/ventilador.o ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/bombilla.o: bombilla.c  .generated_files/flags/default/bc788b80abe9e45be33817dab60f1049fa38b7a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/bombilla.o.d 
 	@${RM} ${OBJECTDIR}/bombilla.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/bombilla.o.d" -o ${OBJECTDIR}/bombilla.o bombilla.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/bulb.o: TftDriver/bulb.c  .generated_files/flags/default/671bed654a30a5cb8a3311abb1ac22661dbf46af .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/bulb.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/bulb.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/bulb.o.d" -o ${OBJECTDIR}/TftDriver/bulb.o TftDriver/bulb.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/fan.o: TftDriver/fan.c  .generated_files/flags/default/f2ccf3b39789a4b92ae61ffd2c7476b749af36a7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/fan.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/fan.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/fan.o.d" -o ${OBJECTDIR}/TftDriver/fan.o TftDriver/fan.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/ventilador.o: ventilador.c  .generated_files/flags/default/56e483543afb852d712c17fe1f80942d82dd7c86 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ventilador.o.d 
+	@${RM} ${OBJECTDIR}/ventilador.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/ventilador.o.d" -o ${OBJECTDIR}/ventilador.o ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 else
 ${OBJECTDIR}/TftDriver/spi.o: TftDriver/spi.c  .generated_files/flags/default/a138d8fd23bf8954a27b2191c5c25638669ec918 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -173,12 +179,6 @@ ${OBJECTDIR}/TftDriver/TftDriver.o: TftDriver/TftDriver.c  .generated_files/flag
 	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o.d 
 	@${RM} ${OBJECTDIR}/TftDriver/TftDriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/TftDriver.o.d" -o ${OBJECTDIR}/TftDriver/TftDriver.o TftDriver/TftDriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
-${OBJECTDIR}/TftDriver/logo_ventilador.o: TftDriver/logo_ventilador.c  .generated_files/flags/default/3a604176cc79f43e08df5d892eb80ec1a885172c .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/TftDriver" 
-	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o.d 
-	@${RM} ${OBJECTDIR}/TftDriver/logo_ventilador.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/logo_ventilador.o.d" -o ${OBJECTDIR}/TftDriver/logo_ventilador.o TftDriver/logo_ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 ${OBJECTDIR}/TftDriver/DefaultFonts.o: TftDriver/DefaultFonts.c  .generated_files/flags/default/806041ecb1f0bf6f5396634ad427e4b7d57385e8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/TftDriver" 
@@ -210,17 +210,29 @@ ${OBJECTDIR}/sensor.o: sensor.c  .generated_files/flags/default/7c1a3db4fab19a8c
 	@${RM} ${OBJECTDIR}/sensor.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/sensor.o.d" -o ${OBJECTDIR}/sensor.o sensor.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
-${OBJECTDIR}/ventilador.o: ventilador.c  .generated_files/flags/default/547762fbc357155798dbf3a24ed1241be0decf28 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/ventilador.o.d 
-	@${RM} ${OBJECTDIR}/ventilador.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/ventilador.o.d" -o ${OBJECTDIR}/ventilador.o ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
-	
 ${OBJECTDIR}/bombilla.o: bombilla.c  .generated_files/flags/default/75e9bab49cdb79822abef14a936e2660aac76d95 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/bombilla.o.d 
 	@${RM} ${OBJECTDIR}/bombilla.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/bombilla.o.d" -o ${OBJECTDIR}/bombilla.o bombilla.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/bulb.o: TftDriver/bulb.c  .generated_files/flags/default/a4f3d58b9e0234248c394feaeb8bb801b53cbb8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/bulb.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/bulb.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/bulb.o.d" -o ${OBJECTDIR}/TftDriver/bulb.o TftDriver/bulb.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/TftDriver/fan.o: TftDriver/fan.c  .generated_files/flags/default/bfe258cb9d65a9fe00087d9842a1df9624c50e0b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/TftDriver" 
+	@${RM} ${OBJECTDIR}/TftDriver/fan.o.d 
+	@${RM} ${OBJECTDIR}/TftDriver/fan.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/TftDriver/fan.o.d" -o ${OBJECTDIR}/TftDriver/fan.o TftDriver/fan.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/ventilador.o: ventilador.c  .generated_files/flags/default/547762fbc357155798dbf3a24ed1241be0decf28 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ventilador.o.d 
+	@${RM} ${OBJECTDIR}/ventilador.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -fno-common -MP -MMD -MF "${OBJECTDIR}/ventilador.o.d" -o ${OBJECTDIR}/ventilador.o ventilador.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 

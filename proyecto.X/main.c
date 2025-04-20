@@ -17,10 +17,12 @@ void init1();
 int convertir_a_entero(const char* str, int* resultado);
 void interpretar_instruccion(const char* instruccion);
 char* recibir_cadena();
+void cambiaVentDisplay(int n);
+void cambiaBombiDisplay(int n);
 //Variables globales del main
 char mensaje_temp[32]={0};
 int modo_auto=0;
-int t_deseada=28;
+int t_deseada=0;
 int main(){
     //Inicicializaciones
     init1();
@@ -51,18 +53,21 @@ int main(){
        //Actualización automatica en el display 
        if(existeMedia()){
            t=getTemperatura();
+           //Cambiar temperatura actual en el display
            asm("di");
            setColor(VGA_BLACK);
-           fillRect(0,40,158,60);
+           fillRect(110,20,158,30);
            setColor(VGA_WHITE);
-           sprintf(mensaje_temp, "Hay %.2f grados",t );
-           print(mensaje_temp, LEFT, 40,0);
+           sprintf(mensaje_temp, "%.2f",t);
+           print(mensaje_temp, RIGHT, 20,0);
            asm("ei");
            //Probar el PI
            if (modo_auto){
                calor=controlar_brillo(t_deseada,t);
                frio=controlar_velocidad(t_deseada,t);
-               sprintf(temp,"%d",calor);
+               cambiaVentDisplay(frio);
+               cambiaBombiDisplay(calor);
+               //sprintf(temp,"%d",calor);
                //putsUART(temp);
                setBrillo(calor);
                setVelocidad(frio);
@@ -73,7 +78,7 @@ int main(){
            sprintf(temp,"%.2f",t);
            putsUART(temp);
            putsUART(" Celsius \n\r");
-           //setBrillo(200);
+           //setBrillo(100);
        } 
        ant=act;
     }
@@ -94,25 +99,39 @@ void init1(){
 /*Funcion que inicializae el fondo de display
  * OJO con el timer 4 y con las imagenes
  */
+extern uint8_t SmallFont[];
+extern uint8_t BigFont[];
 void initDisplay(){
     Ventilador_Stop(); //El timer 4 no puede estar corriendo justo a la vez
-    extern uint8_t SmallFont[];
-    extern unsigned short logo[];
+    extern unsigned short fan[];
+    extern unsigned short bulb[];
     inicializarTFT(LANDSCAPE);
     setFont(SmallFont);
     clrScr(); // Borra la pantalla
-    // Dibuja un rectángulo rojo en la parte superior de la pantalla.
+    // Rectangulo de arriba
     setColor(VGA_RED);
     fillRect(0, 0, 159, 13);
-    // Dibuja un rectángulo gris en la parte inferior de la pantalla.
-    setColorRGB(64, 64, 64);
-    fillRect(0, 114, 159, 127);
-    // Selecciona color blanco y fondo transparente para el texto
+    // Texto inicial
     setColor(VGA_WHITE);
     setBackColor(VGA_TRANSPARENT);
-    // Imprime una cadena centrada en la línea 1 de la pantalla con ángulo 0
     print("Termostato ACI & PMP", CENTER, 1,0);
-    drawBitmap(CENTER-15,CENTER+50,50,64,logo,1);
+    print("Temp actual:", LEFT, 20,0);
+    print("T esperada : ",LEFT,40,0);
+    print("MODO AUTO:",CENTER,65,0);
+    print("0 %",12,107,0);
+    print("0 %",135,107,0);
+    setFont(BigFont);
+    print("OFF",55,90,0);
+    setFont(SmallFont);
+    //Lineas amarillas
+    setColorRGB(255,255,0);
+    drawLine(0,35,200,35);
+    drawLine(0,55,200,55);
+    // Imagenes (drawBitMap)
+    // OJO!!!!!!
+    //La he modificado para que que pueda pintar  bien fondos trasnparentes
+    drawBitmap(CENTER-15,CENTER+50,34,33,fan,1);
+    drawBitmap2(RIGHT+110,CENTER+50,34,34,bulb,1);
     Ventilador_Start();
 }
 
@@ -189,7 +208,24 @@ void interpretar_instruccion(const char* instruccion) {
 
         // Caso: "AUTO OFF"
         if (strcmp(tipo, "OFF") == 0 && valor_str == NULL) {
+            if(modo_auto){ //Estaba en auto
+                //Pintamos en display OFF
+                asm("di");
+                setColor(VGA_BLACK);
+                fillRect(50,87,100,110);
+                setColor(VGA_WHITE);
+                setFont(BigFont);
+                print("OFF",55,90,0);
+                setFont(SmallFont);
+                asm("ei");   
+            }
             modo_auto = 0;
+            //Quito la temperatura deseada (en modo manual no hay)
+            asm("di");
+            setColor(VGA_BLACK);
+            fillRect(110,40,158,50);
+            setColor(VGA_WHITE);
+            asm("ei");
             putsUART("\r\n");
             return;
         }
@@ -205,8 +241,26 @@ void interpretar_instruccion(const char* instruccion) {
             putsUART("ERROR: no numeros en la conversion\r\n");
             return;
         }
+        if(!modo_auto){ //Estaba en off
+            //Cambiamos a ON en el display
+            asm("di");
+            setColor(VGA_BLACK);
+            fillRect(50,87,100,110);
+            setColor(VGA_WHITE);
+            setFont(BigFont);
+            print("ON",55,90,0);
+            setFont(SmallFont);
+            asm("ei");
+        }
         t_deseada=valor_auto; //Se ajusta a la nueva temperatura pedida
         modo_auto = 1; //Se activa el modo automatico
+        asm("di");
+        setColor(VGA_BLACK);
+        fillRect(110,40,158,50);
+        setColor(VGA_WHITE);
+        sprintf(mensaje_temp, "%d",t_deseada);
+        print(mensaje_temp, RIGHT, 40,0);
+        asm("ei");
         putsUART("\r\n");
         return;
     }
@@ -216,9 +270,22 @@ void interpretar_instruccion(const char* instruccion) {
         putsUART("ERROR: no se reconoce la instruccion\r\n");
         return;
     }
-
+    if(modo_auto){ //Estaba en on, pintamos 
+        asm("di");
+        setColor(VGA_BLACK);
+        fillRect(50,87,100,110);
+        setColor(VGA_WHITE);
+        setFont(BigFont);
+        print("OFF",55,90,0);
+        setFont(SmallFont);
+        asm("ei");   
+    }
     modo_auto = 0; // Por si no se hubiera desactivado antes
-
+    asm("di");
+    setColor(VGA_BLACK);
+    fillRect(110,40,158,50);
+    setColor(VGA_WHITE);
+    asm("ei");
     int valor;
     if (!convertir_a_entero(valor_str, &valor)) {
         putsUART("ERROR: no numeros en conversion\r\n");
@@ -227,11 +294,16 @@ void interpretar_instruccion(const char* instruccion) {
 
     if (strcmp(modo, "MANUAL") == 0) {
         if (strcmp(tipo, "V") == 0) {
+            if (valor>100){
+                valor=100;
+            }
             setVelocidad(valor);
+            cambiaVentDisplay(valor);
             putsUART("\r\n");
         } else if (strcmp(tipo, "B") == 0) {
             setBrillo(valor);
             putsUART("\r\n");
+            cambiaBombiDisplay(valor);
         } else {
             putsUART("ERROR: modo manual erroneo\r\n");
         }
@@ -240,3 +312,21 @@ void interpretar_instruccion(const char* instruccion) {
     }
 }
 
+void cambiaVentDisplay(int n){
+    asm("di");
+    setColor(VGA_BLACK);
+    fillRect(LEFT,107,26,117);
+    setColor(VGA_WHITE);
+    sprintf(mensaje_temp,"%d",n);
+    print(mensaje_temp,5,107,0);
+    asm("ei");
+}
+void cambiaBombiDisplay(int n){
+    asm("di");
+    setColor(VGA_BLACK);
+    fillRect(127,107,150,117);
+    setColor(VGA_WHITE);
+    sprintf(mensaje_temp,"%d",n);
+    print(mensaje_temp,127,107,0);
+    asm("ei");
+}

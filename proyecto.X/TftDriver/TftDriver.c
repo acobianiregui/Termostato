@@ -694,6 +694,7 @@ void print(char *st, int x, int y, int deg)
  * @param data DirecciÃ³n del vector que contiene el bitmap.
  * @param scale Factor de escala para dibujar el bitmap.
  */
+
 void drawBitmap(int x, int y, int sx, int sy, uint16_t data[], int scale)
 {
 	unsigned int col;
@@ -751,7 +752,80 @@ void drawBitmap(int x, int y, int sx, int sy, uint16_t data[], int scale)
 	}
 	clrXY();
 }
+/*Adicion de Anton Cobian. 
+ *Version modificada de drawBitmap para que el color blanco sea transparente
+ * 
+*/
+void drawBitmap2(int x, int y, int sx, int sy, uint16_t data[], int scale)
+{
+	unsigned int col;
+	int tx, ty, tc, tsx, tsy;
 
+	if (scale==1)
+	{
+		if (_orientacion==PORTRAIT){
+			setXY(x, y, x+sx-1, y+sy-1);
+			for (tc=0; tc<(sx*sy); tc++){
+				col = data[tc];
+				if (col != 0xFFFF) {
+					LCD_Write_DATA(col >> 8);
+					LCD_Write_DATA(col & 0xff);
+				} else {
+					// Saltamos el píxel blanco (transparente)
+					LCD_Write_DATA(0x00); // o cualquier fondo por defecto
+					LCD_Write_DATA(0x00);
+				}
+			}
+		}else{
+			for (ty=0; ty<sy; ty++){
+				setXY(x, y+ty, x+sx-1, y+ty);
+				for (tx=sx-1; tx>=0; tx--){
+					col = data[(ty*sx)+tx];
+					if (col != 0xFFFF) {
+						LCD_Write_DATA(col >> 8);
+						LCD_Write_DATA(col & 0xff);
+					} else {
+						LCD_Write_DATA(0x00); // fondo negro, o simplemente saltar
+						LCD_Write_DATA(0x00);
+					}
+				}
+			}
+		}
+	}else{
+		if (_orientacion==PORTRAIT){
+			for (ty=0; ty<sy; ty++){
+				setXY(x, y+(ty*scale), x+((sx*scale)-1), y+(ty*scale)+scale);
+				for (tsy=0; tsy<scale; tsy++)
+					for (tx=0; tx<sx; tx++)
+					{
+						col=data[(ty*sx)+tx];
+						for (tsx=0; tsx<scale; tsx++)
+							LCD_Write_DATA(col>>8);LCD_Write_DATA(col & 0xff);
+					}
+			}
+			
+		}
+		else
+		{
+			
+			for (ty=0; ty<sy; ty++)
+			{
+				for (tsy=0; tsy<scale; tsy++)
+				{
+					setXY(x, y+(ty*scale)+tsy, x+((sx*scale)-1), y+(ty*scale)+tsy);
+					for (tx=sx-1; tx>=0; tx--)
+					{
+						col=data[(ty*sx)+tx];
+						for (tsx=0; tsx<scale; tsx++)
+							LCD_Write_DATA(col>>8);LCD_Write_DATA(col & 0xff);
+					}
+				}
+			}
+			
+		}
+	}
+	clrXY();
+}
 /***************************************************************************/
 /************************** Funciones privadas *****************************/
 /***************************************************************************/

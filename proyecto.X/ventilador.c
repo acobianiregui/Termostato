@@ -5,7 +5,7 @@ int vel=0;
 
 float error_anterior = 0.0;
 float dt2 = 1.0; 
-float Kp2 = 40.0;            
+float Kp2 = 50.0;            
 float Kd2 = 0.1;   
 
 
@@ -63,6 +63,13 @@ void Ventilador_Start(void) {
 void Ventilador_Stop(void) {
     T4CON &= ~(1<<15);
     LATB &= ~(1<<14);
+}
+int getVelocidad(){
+    int sol;
+    asm("di");
+    sol=vel;
+    asm("ei");
+    return sol;
 }
 
 __attribute__((vector(16), interrupt(IPL1SOFT), nomips16))

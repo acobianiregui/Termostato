@@ -15,9 +15,9 @@
       <logicalFolder name="TftDriver" displayName="TftDriver" projectFiles="true">
         <itemPath>TftDriver/spi.c</itemPath>
         <itemPath>TftDriver/TftDriver.c</itemPath>
-        <itemPath>TftDriver/logo_ventilador.c</itemPath>
         <itemPath>TftDriver/DefaultFonts.c</itemPath>
-        <itemPath>TftDriver/logo_ventilador.h</itemPath>
+        <itemPath>TftDriver/bulb.c</itemPath>
+        <itemPath>TftDriver/fan.c</itemPath>
       </logicalFolder>
       <itemPath>Pic32Ini.c</itemPath>
       <itemPath>Pic32Ini.h</itemPath>
@@ -26,10 +26,10 @@
       <itemPath>main.c</itemPath>
       <itemPath>sensor.c</itemPath>
       <itemPath>sensor.h</itemPath>
-      <itemPath>ventilador.c</itemPath>
       <itemPath>bombilla.c</itemPath>
       <itemPath>bombilla.h</itemPath>
       <itemPath>ventilador.h</itemPath>
+      <itemPath>ventilador.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

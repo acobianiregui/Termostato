@@ -77,4 +77,6 @@ void fillCircle(int x, int y, int radius);
 void fillScrRGB(uint8_t r, uint8_t g, uint8_t b);
 void fillScr(uint16_t color);
 void drawBitmap(int x, int y, int sx, int sy, uint16_t data[], int scale);
+//Añadido por Anton Cobian
+void drawBitmap2(int x, int y, int sx, int sy, uint16_t data[], int scale);
 #endif

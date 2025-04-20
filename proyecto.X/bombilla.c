@@ -37,8 +37,8 @@ void initBombilla(){
 //Una relacion lineal quizas no sea la mejor (la bombilla retiene el calor)
 //Podemos probar con un control PI
 
-float Kp = 15.0; //kp original 15
-float Ki = 0.36; //ki 0.36
+float Kp = 12.0; //kp original 15
+float Ki = 0.75; //ki 0.36
 float error_integral = 0.0;
 float dt = 1; // cada segundo
 
@@ -82,4 +82,11 @@ void startBombilla(){
 void stopBombilla(){
     OC3CON &= ~0x8000;
     T2CON  &= ~0x8000;
+}
+int getBrillo(){
+    int sol;
+    asm("di");
+    sol=alto*100/PERIODO;
+    asm("ei");
+    return sol;
 }
