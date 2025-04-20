@@ -17,7 +17,7 @@ int controlar_velocidad(float temperatura_deseada, float temperatura_actual);
 void setVelocidad(int velocidad);
 void Ventilador_Start(void);
 void Ventilador_Stop(void);
-
+void InterrupcionTimer4(void);
 
 #ifdef	__cplusplus
 }

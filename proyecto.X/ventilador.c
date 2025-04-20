@@ -4,21 +4,21 @@ int cuenta=0;
 int vel=0;
 
 float error_anterior = 0.0;
-float dt = 1.0; 
-float Kp = 12.0;            
-float Kd = 2.0;   
+float dt2 = 1.0; 
+float Kp2 = 40.0;            
+float Kd2 = 0.1;   
 
 
 //El ventilador sera por PWM de interrupciones
 void initVentilador(){
     //Decidir pines
-    TRISA &= ~(1<<7);
-    ANSELC &= ~(1<<7);
-    LATC &= ~(1<<7);
+    TRISB &= ~(1<<14);
+    ANSELB &= ~(1<<14);
+    LATB &= ~(1<<14);
     //Timer 4
     T4CON=0;
     TMR4=0;
-    PR4=249; //50 us
+    PR4=999; //50 us
     T4CON=0x0000;
     //Interrupciones
     IFS0bits.T4IF=0; // Apagamos el flag por si acaso
@@ -31,11 +31,11 @@ void initVentilador(){
 int controlar_velocidad(float temperatura_deseada, float temperatura_actual){
     float error = temperatura_actual - temperatura_deseada;
     
-    float derivada = (error - error_anterior)/dt;
+    float derivada = (error - error_anterior)/dt2;
     
     error_anterior = error;
     
-    float salida = Kp * error + Kd * derivada;
+    float salida = Kp2 * error + Kd2 * derivada;
     
     if(salida > 100.0){
         salida = 100.0;
@@ -43,8 +43,11 @@ int controlar_velocidad(float temperatura_deseada, float temperatura_actual){
     if(salida < 0.0){
         salida = 0.0;
     }
-    
-    return (int)salida;
+    int v = (salida >= 50.0) ? (int)salida : 0;
+    if (error>=1 &&v==0){
+        v+=50;
+    }
+    return v;
 }
 
 void setVelocidad(int velocidad){
@@ -59,21 +62,20 @@ void Ventilador_Start(void) {
 
 void Ventilador_Stop(void) {
     T4CON &= ~(1<<15);
-    LATC &= ~();
+    LATB &= ~(1<<14);
 }
 
 __attribute__((vector(16), interrupt(IPL1SOFT), nomips16))
-void InterrupcionTimer4(void) {
+void InterrupcionTimer4(void){
     IFS0bits.T4IF=0; //Apagamos flag
     if (cuenta>100){
         cuenta=0;
     }
     cuenta++;
     if (cuenta<vel){
-        LATA |= (1 << 7);
+        LATB |= (1 << 14);
         
     }else{
-        LATC &= ~(1 << 7);
-        
+        LATB &= ~(1 << 14);
     }
 }

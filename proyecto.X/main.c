@@ -23,6 +23,8 @@ int main(){
     InicializarUART(9600);
     initBombilla();
     startBombilla();
+    initVentilador();
+    Ventilador_Start();
     //stopBombilla();
     initDisplay();
     //Habilitar interrupciones
@@ -31,30 +33,35 @@ int main(){
     int act; int ant=(PORTB>>5)&1;
     char temp [TAMANO_COLA]={0};
     float t=0;
-    int j=0;
-    while(33){       
+    int calor=0;
+    int frio=0;
+    int t_deseada=28;
+    while(33){   
        act=(PORTB>>5)&1;
        //Actualización automatica en el display 
        if(existeMedia()){
            t=getTemperatura();
+           asm("di");
            setColor(VGA_BLACK);
            fillRect(0,40,158,60);
            setColor(VGA_WHITE);
            sprintf(mensaje_temp, "Hay %.2f grados",t );
            print(mensaje_temp, LEFT, 40,0);
+           asm("ei");
            //Probar el PI
-           j=controlar_brillo(31,t);
-           //setBrillo(j);
-           sprintf(temp,"%d",j);
-           //putsUART(temp);
-           setBrillo(j);
+           calor=controlar_brillo(t_deseada,t);
+           frio=controlar_velocidad(t_deseada,t);
+           sprintf(temp,"%d",calor);
+           putsUART(temp);
+           setBrillo(calor);
+           setVelocidad(frio);
        }
        if ((act!=ant)&&(act==0)){
-           
+           t_deseada=24;
            sprintf(temp,"%.2f",t);
            putsUART(temp);
            putsUART(" Celsius \n\r");
-           setBrillo(200);
+           //setBrillo(200);
        } 
        ant=act;
     }
@@ -74,7 +81,7 @@ void init1(){
 }
 
 void initDisplay(){
- 
+    Ventilador_Stop(); //El timer 4 no puede estar corriendo justo a la vez
     extern uint8_t SmallFont[];
     extern unsigned short logo[];
     inicializarTFT(LANDSCAPE);
@@ -92,4 +99,5 @@ void initDisplay(){
     // Imprime una cadena centrada en la línea 1 de la pantalla con ángulo 0
     print("Termostato ACI & PMP", CENTER, 1,0);
     drawBitmap(CENTER-15,CENTER+50,50,64,logo,1);
+    Ventilador_Start();
 }
