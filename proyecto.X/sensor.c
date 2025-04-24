@@ -12,7 +12,7 @@ int hay_media=0;
 float Vcc=3.3; //Alimentacion pa el sensor 
 
 void initSensor(){
-    //El sensor térmico a AN0-> RA0
+    //El sensor térmico a AN1-> RA1
     TRISA |=2; //Entrada sensor
     AD1CON1=0;//Apagar conversor
     AD1CON1bits.SSRC = 2;//Timer3

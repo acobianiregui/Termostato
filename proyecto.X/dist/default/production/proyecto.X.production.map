@@ -9,99 +9,99 @@ c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(strlen.o)
                               build/default/production/TftDriver/TftDriver.o (strlen)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\34648\AppData\Local\Temp\ccISwVh7.o (_bootstrap_exception_handler)
+                              C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o (_bootstrap_exception_handler)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                              C:\Users\34648\AppData\Local\Temp\ccISwVh7.o (_on_reset)
+                              C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o (_on_reset)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\34648\AppData\Local\Temp\ccISwVh7.o (_on_bootstrap)
+                              C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o (_on_bootstrap)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                              C:\Users\34648\AppData\Local\Temp\ccISwVh7.o (_nmi_handler)
+                              C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o (_nmi_handler)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init_core.o)
-                              C:\Users\34648\AppData\Local\Temp\ccISwVh7.o (__pic32_data_init)
+                              C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o (__pic32_data_init)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                              C:\Users\34648\AppData\Local\Temp\ccISwVh7.o (_general_exception_context)
+                              C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o (_general_exception_context)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_0)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_0)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_1)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_1)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_2)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_2)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_3)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_3)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_4)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_4)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_5)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_5)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_6)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_6)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_7)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_7)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_8)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_8)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_9)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_9)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_10)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_10)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_11)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_11)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_12)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_12)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_13)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_13)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_14)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_14)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_15)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_15)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_17)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_17)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_18)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_18)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_19)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_19)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_20)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_20)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_21)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_21)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_22)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_22)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector24.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_24)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_24)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector25.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_25)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_25)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector26.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_26)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_26)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_27)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_27)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_28)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_28)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_29)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_29)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_30)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_30)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_31)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_31)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_33)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_33)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_34)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_34)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_35)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_35)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector36.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_36)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_36)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_37)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_37)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_38)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_38)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector39.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_39)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_39)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_40)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_40)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_41)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_41)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_42)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_42)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
-                              C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o (__vector_dispatch_43)
+                              C:\Users\34648\AppData\Local\Temp\ccdH489H.o (__vector_dispatch_43)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
                               c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o) (_general_exception_handler)
 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
@@ -485,9 +485,9 @@ Microchip PIC32 Memory-Usage Report By Module
          812           0           0         812         32c    dp32mul.o                            libm.a
          632           0           0         632         278    fp32subadd.o                         libm.a
          616           0           0         616         268    exdiv.o                              libm.a
-         560           0           0         560         230    fp32div.o                            libm.a
          560           0           0         560         230    data_init                            data_init
-         492           0           0         492         1ec    ccISwVh7.o                           C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+         560           0           0         560         230    fp32div.o                            libm.a
+         492           0           0         492         1ec    ccCs8mpv.o                           C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
          444           0           0         444         1bc    fp32mul.o                            libm.a
          440           0           0         440         1b8    reduct32.o                           libm.a
          420           0           0         420         1a4    cos32.o                              libm.a
@@ -502,8 +502,8 @@ Microchip PIC32 Memory-Usage Report By Module
          288           0           0         288         120    strcmp.o                             libpic32.a
          268           0           0         268         10c    sigmax.o                             libm.a
          264           0           0         264         108    floor32.o                            libm.a
-         256           0           0         256         100    scalbn.o                             libm-musl.a
          256           0           0         256         100    dptofp.o                             libm.a
+         256           0           0         256         100    scalbn.o                             libm-musl.a
          240           0           0         240          f0    exadd.o                              libm.a
          228           0           0         228          e4    __pop_ptr.o                          libc-musl.a
          224           0           0         224          e0    shgetc.o                             libc-musl.a
@@ -516,12 +516,12 @@ Microchip PIC32 Memory-Usage Report By Module
          172           0           0         172          ac    fptodp.o                             libm.a
          164           0           4         168          a8    strtok.o                             libc-musl.a
          168           0           0         168          a8    memset.o                             libpic32.a
-         156           0           0         156          9c    fpcmp.o                              libm.a
          156           0           0         156          9c    fpcmplt.o                            libm.a
+         156           0           0         156          9c    fpcmp.o                              libm.a
          144           0           0         144          90    pic32_data_init_core.o               libpic32.a
          144           0           0         144          90    dptoli.o                             libm.a
-         128           0           0         128          80    fptoli.o                             libm.a
          128           0           0         128          80    __int_vsnprintf.o                    libc-musl.a
+         128           0           0         128          80    fptoli.o                             libm.a
          124           0           0         124          7c    atoi.o                               libc-musl.a
          124           0           0         124          7c    stpncpy.o                            libc-musl.a
          124           0           0         124          7c    _floatdidf.o                         libgcc.a
@@ -616,6 +616,12 @@ Discarded input sections
  .reginfo       0x0000000000000000       0x18 build/default/production/TftDriver/DefaultFonts.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 build/default/production/TftDriver/DefaultFonts.o
+ .reginfo       0x0000000000000000       0x18 build/default/production/TftDriver/bulb.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 build/default/production/TftDriver/bulb.o
+ .reginfo       0x0000000000000000       0x18 build/default/production/TftDriver/fan.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 build/default/production/TftDriver/fan.o
  .reginfo       0x0000000000000000       0x18 build/default/production/Pic32Ini.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 build/default/production/Pic32Ini.o
@@ -631,25 +637,19 @@ Discarded input sections
  .reginfo       0x0000000000000000       0x18 build/default/production/bombilla.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 build/default/production/bombilla.o
- .reginfo       0x0000000000000000       0x18 build/default/production/TftDriver/bulb.o
- .MIPS.abiflags
-                0x0000000000000000       0x18 build/default/production/TftDriver/bulb.o
- .reginfo       0x0000000000000000       0x18 build/default/production/TftDriver/fan.o
- .MIPS.abiflags
-                0x0000000000000000       0x18 build/default/production/TftDriver/fan.o
  .reginfo       0x0000000000000000       0x18 build/default/production/ventilador.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 build/default/production/ventilador.o
- .reginfo       0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
- .reginfo       0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
+                0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
- .reginfo       0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+                0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
- .discard       0x0000000000000000       0xb0 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+                0x0000000000000000       0x18 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
+ .discard       0x0000000000000000       0xb0 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
  .reginfo       0x0000000000000000       0x18 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
@@ -1481,18 +1481,18 @@ LOAD c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/.
 LOAD build/default/production/TftDriver/spi.o
 LOAD build/default/production/TftDriver/TftDriver.o
 LOAD build/default/production/TftDriver/DefaultFonts.o
+LOAD build/default/production/TftDriver/bulb.o
+LOAD build/default/production/TftDriver/fan.o
 LOAD build/default/production/Pic32Ini.o
 LOAD build/default/production/UART.o
 LOAD build/default/production/main.o
 LOAD build/default/production/sensor.o
 LOAD build/default/production/bombilla.o
-LOAD build/default/production/TftDriver/bulb.o
-LOAD build/default/production/TftDriver/fan.o
 LOAD build/default/production/ventilador.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
-LOAD C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
-LOAD C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
-LOAD C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+LOAD C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
+LOAD C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
+LOAD C:\Users\34648\AppData\Local\Temp\ccdH489H.o
 LOAD c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 LOAD c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a
 START GROUP
@@ -1552,16 +1552,16 @@ END GROUP
 
 .reset          0x00000000bfc00000      0x178
  *(.reset)
- .reset         0x00000000bfc00000        0x8 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .reset         0x00000000bfc00000        0x8 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
                 0x00000000bfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0x00000000bfc00008      0x170 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+                0x00000000bfc00008      0x170 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
                 0x00000000bfc00008                _startup
 
 .bev_excpt      0x00000000bfc00380       0x10
  *(.bev_handler)
- .bev_handler   0x00000000bfc00380       0x10 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .bev_handler   0x00000000bfc00380       0x10 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
 
 .dbg_excpt      0x00000000bfc00480        0x0
                 0x00000000bfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
@@ -1571,7 +1571,7 @@ END GROUP
 
 .app_excpt      0x000000009d00f180       0x10
  *(.gen_handler)
- .gen_handler   0x000000009d00f180       0x10 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .gen_handler   0x000000009d00f180       0x10 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
 
 .vector_0       0x000000009d00f200        0x8
  *(.vector_0)
@@ -2115,13 +2115,13 @@ END GROUP
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/spi.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/TftDriver.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/DefaultFonts.o
+ .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/bulb.o
+ .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/fan.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/Pic32Ini.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/UART.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/main.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/sensor.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/bombilla.o
- .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/bulb.o
- .mdebug.abi32  0x0000000000000000        0x0 build/default/production/TftDriver/fan.o
  .mdebug.abi32  0x0000000000000000        0x0 build/default/production/ventilador.o
  .mdebug.abi32  0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .mdebug.abi32  0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
@@ -2212,13 +2212,13 @@ END GROUP
                                          0x2c (size before relaxing)
  .comment       0x000000000000002b       0x2c build/default/production/TftDriver/TftDriver.o
  .comment       0x000000000000002b       0x2c build/default/production/TftDriver/DefaultFonts.o
+ .comment       0x000000000000002b       0x2c build/default/production/TftDriver/bulb.o
+ .comment       0x000000000000002b       0x2c build/default/production/TftDriver/fan.o
  .comment       0x000000000000002b       0x2c build/default/production/Pic32Ini.o
  .comment       0x000000000000002b       0x2c build/default/production/UART.o
  .comment       0x000000000000002b       0x2c build/default/production/main.o
  .comment       0x000000000000002b       0x2c build/default/production/sensor.o
  .comment       0x000000000000002b       0x2c build/default/production/bombilla.o
- .comment       0x000000000000002b       0x2c build/default/production/TftDriver/bulb.o
- .comment       0x000000000000002b       0x2c build/default/production/TftDriver/fan.o
  .comment       0x000000000000002b       0x2c build/default/production/ventilador.o
  .comment       0x000000000000002b       0x2c c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .comment       0x000000000000002b       0x18 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(memset.o)
@@ -2296,19 +2296,19 @@ END GROUP
  .debug_aranges
                 0x0000000000000040       0x18 build/default/production/TftDriver/DefaultFonts.o
  .debug_aranges
-                0x0000000000000058       0x20 build/default/production/Pic32Ini.o
+                0x0000000000000058       0x18 build/default/production/TftDriver/bulb.o
  .debug_aranges
-                0x0000000000000078       0x20 build/default/production/UART.o
+                0x0000000000000070       0x18 build/default/production/TftDriver/fan.o
  .debug_aranges
-                0x0000000000000098       0x20 build/default/production/main.o
+                0x0000000000000088       0x20 build/default/production/Pic32Ini.o
  .debug_aranges
-                0x00000000000000b8       0x20 build/default/production/sensor.o
+                0x00000000000000a8       0x20 build/default/production/UART.o
  .debug_aranges
-                0x00000000000000d8       0x20 build/default/production/bombilla.o
+                0x00000000000000c8       0x20 build/default/production/main.o
  .debug_aranges
-                0x00000000000000f8       0x18 build/default/production/TftDriver/bulb.o
+                0x00000000000000e8       0x20 build/default/production/sensor.o
  .debug_aranges
-                0x0000000000000110       0x18 build/default/production/TftDriver/fan.o
+                0x0000000000000108       0x20 build/default/production/bombilla.o
  .debug_aranges
                 0x0000000000000128       0x20 build/default/production/ventilador.o
  .debug_aranges
@@ -2406,13 +2406,13 @@ END GROUP
  .debug_info    0x0000000000000000      0x829 build/default/production/TftDriver/spi.o
  .debug_info    0x0000000000000829     0x114b build/default/production/TftDriver/TftDriver.o
  .debug_info    0x0000000000001974       0xc0 build/default/production/TftDriver/DefaultFonts.o
- .debug_info    0x0000000000001a34       0xb8 build/default/production/Pic32Ini.o
- .debug_info    0x0000000000001aec      0xcaa build/default/production/UART.o
- .debug_info    0x0000000000002796      0x4ba build/default/production/main.o
- .debug_info    0x0000000000002c50      0xb45 build/default/production/sensor.o
- .debug_info    0x0000000000003795      0x28e build/default/production/bombilla.o
- .debug_info    0x0000000000003a23       0x5a build/default/production/TftDriver/bulb.o
- .debug_info    0x0000000000003a7d       0x5a build/default/production/TftDriver/fan.o
+ .debug_info    0x0000000000001a34       0x5a build/default/production/TftDriver/bulb.o
+ .debug_info    0x0000000000001a8e       0x5a build/default/production/TftDriver/fan.o
+ .debug_info    0x0000000000001ae8       0xb8 build/default/production/Pic32Ini.o
+ .debug_info    0x0000000000001ba0      0xcaa build/default/production/UART.o
+ .debug_info    0x000000000000284a      0x4ba build/default/production/main.o
+ .debug_info    0x0000000000002d04      0xb45 build/default/production/sensor.o
+ .debug_info    0x0000000000003849      0x28e build/default/production/bombilla.o
  .debug_info    0x0000000000003ad7      0x8f8 build/default/production/ventilador.o
  .debug_info    0x00000000000043cf       0x9d c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .debug_info    0x000000000000446c       0x41 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
@@ -2463,13 +2463,13 @@ END GROUP
  .debug_abbrev  0x0000000000000000      0x143 build/default/production/TftDriver/spi.o
  .debug_abbrev  0x0000000000000143      0x29b build/default/production/TftDriver/TftDriver.o
  .debug_abbrev  0x00000000000003de       0x61 build/default/production/TftDriver/DefaultFonts.o
- .debug_abbrev  0x000000000000043f       0x6d build/default/production/Pic32Ini.o
- .debug_abbrev  0x00000000000004ac      0x1b6 build/default/production/UART.o
- .debug_abbrev  0x0000000000000662      0x204 build/default/production/main.o
- .debug_abbrev  0x0000000000000866      0x1f1 build/default/production/sensor.o
- .debug_abbrev  0x0000000000000a57      0x12d build/default/production/bombilla.o
- .debug_abbrev  0x0000000000000b84       0x47 build/default/production/TftDriver/bulb.o
- .debug_abbrev  0x0000000000000bcb       0x47 build/default/production/TftDriver/fan.o
+ .debug_abbrev  0x000000000000043f       0x47 build/default/production/TftDriver/bulb.o
+ .debug_abbrev  0x0000000000000486       0x47 build/default/production/TftDriver/fan.o
+ .debug_abbrev  0x00000000000004cd       0x6d build/default/production/Pic32Ini.o
+ .debug_abbrev  0x000000000000053a      0x1b6 build/default/production/UART.o
+ .debug_abbrev  0x00000000000006f0      0x204 build/default/production/main.o
+ .debug_abbrev  0x00000000000008f4      0x1f1 build/default/production/sensor.o
+ .debug_abbrev  0x0000000000000ae5      0x12d build/default/production/bombilla.o
  .debug_abbrev  0x0000000000000c12      0x1b0 build/default/production/ventilador.o
  .debug_abbrev  0x0000000000000dc2       0x7d c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .debug_abbrev  0x0000000000000e3f       0x31 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
@@ -2520,13 +2520,13 @@ END GROUP
  .debug_line    0x0000000000000000      0x1cb build/default/production/TftDriver/spi.o
  .debug_line    0x00000000000001cb      0xc97 build/default/production/TftDriver/TftDriver.o
  .debug_line    0x0000000000000e62       0xc3 build/default/production/TftDriver/DefaultFonts.o
- .debug_line    0x0000000000000f25      0x13e build/default/production/Pic32Ini.o
- .debug_line    0x0000000000001063      0x26e build/default/production/UART.o
- .debug_line    0x00000000000012d1      0x357 build/default/production/main.o
- .debug_line    0x0000000000001628      0x20f build/default/production/sensor.o
- .debug_line    0x0000000000001837      0x1dd build/default/production/bombilla.o
- .debug_line    0x0000000000001a14       0x6d build/default/production/TftDriver/bulb.o
- .debug_line    0x0000000000001a81       0x6c build/default/production/TftDriver/fan.o
+ .debug_line    0x0000000000000f25       0x6d build/default/production/TftDriver/bulb.o
+ .debug_line    0x0000000000000f92       0x6c build/default/production/TftDriver/fan.o
+ .debug_line    0x0000000000000ffe      0x13e build/default/production/Pic32Ini.o
+ .debug_line    0x000000000000113c      0x26e build/default/production/UART.o
+ .debug_line    0x00000000000013aa      0x357 build/default/production/main.o
+ .debug_line    0x0000000000001701      0x20f build/default/production/sensor.o
+ .debug_line    0x0000000000001910      0x1dd build/default/production/bombilla.o
  .debug_line    0x0000000000001aed      0x204 build/default/production/ventilador.o
  .debug_line    0x0000000000001cf1       0xb2 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .debug_line    0x0000000000001da3       0xcc c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
@@ -2632,13 +2632,13 @@ END GROUP
  .debug_str     0x0000000000000000      0x588 build/default/production/TftDriver/spi.o
  .debug_str     0x0000000000000588      0x5fd build/default/production/TftDriver/TftDriver.o
  .debug_str     0x0000000000000b85      0x2a3 build/default/production/TftDriver/DefaultFonts.o
- .debug_str     0x0000000000000e28      0x2be build/default/production/Pic32Ini.o
- .debug_str     0x00000000000010e6      0x6c9 build/default/production/UART.o
- .debug_str     0x00000000000017af      0x42c build/default/production/main.o
- .debug_str     0x0000000000001bdb      0x62d build/default/production/sensor.o
- .debug_str     0x0000000000002208      0x391 build/default/production/bombilla.o
- .debug_str     0x0000000000002599      0x236 build/default/production/TftDriver/bulb.o
- .debug_str     0x00000000000027cf      0x230 build/default/production/TftDriver/fan.o
+ .debug_str     0x0000000000000e28      0x236 build/default/production/TftDriver/bulb.o
+ .debug_str     0x000000000000105e      0x230 build/default/production/TftDriver/fan.o
+ .debug_str     0x000000000000128e      0x2be build/default/production/Pic32Ini.o
+ .debug_str     0x000000000000154c      0x6c9 build/default/production/UART.o
+ .debug_str     0x0000000000001c15      0x42c build/default/production/main.o
+ .debug_str     0x0000000000002041      0x62d build/default/production/sensor.o
+ .debug_str     0x000000000000266e      0x391 build/default/production/bombilla.o
  .debug_str     0x00000000000029ff      0x5a4 build/default/production/ventilador.o
  .debug_str     0x0000000000002fa3      0x2a7 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a(floatunsisf.o)
  .debug_str     0x000000000000324a      0x36e c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
@@ -2801,27 +2801,27 @@ END GROUP
  .gnu.attributes
                 0x0000000000000030       0x10 build/default/production/TftDriver/DefaultFonts.o
  .gnu.attributes
-                0x0000000000000040       0x10 build/default/production/Pic32Ini.o
+                0x0000000000000040       0x10 build/default/production/TftDriver/bulb.o
  .gnu.attributes
-                0x0000000000000050       0x10 build/default/production/UART.o
+                0x0000000000000050       0x10 build/default/production/TftDriver/fan.o
  .gnu.attributes
-                0x0000000000000060       0x10 build/default/production/main.o
+                0x0000000000000060       0x10 build/default/production/Pic32Ini.o
  .gnu.attributes
-                0x0000000000000070       0x10 build/default/production/sensor.o
+                0x0000000000000070       0x10 build/default/production/UART.o
  .gnu.attributes
-                0x0000000000000080       0x10 build/default/production/bombilla.o
+                0x0000000000000080       0x10 build/default/production/main.o
  .gnu.attributes
-                0x0000000000000090       0x10 build/default/production/TftDriver/bulb.o
+                0x0000000000000090       0x10 build/default/production/sensor.o
  .gnu.attributes
-                0x00000000000000a0       0x10 build/default/production/TftDriver/fan.o
+                0x00000000000000a0       0x10 build/default/production/bombilla.o
  .gnu.attributes
                 0x00000000000000b0       0x10 build/default/production/ventilador.o
  .gnu.attributes
-                0x00000000000000c0       0x10 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+                0x00000000000000c0       0x10 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
  .gnu.attributes
-                0x00000000000000d0       0x10 C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
+                0x00000000000000d0       0x10 C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
  .gnu.attributes
-                0x00000000000000e0       0x10 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+                0x00000000000000e0       0x10 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
  .gnu.attributes
                 0x00000000000000f0       0x10 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .gnu.attributes
@@ -3428,37 +3428,37 @@ LOAD stack
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 
 .data%z118      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+ .data          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
 
 .data%z119      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
+ .data          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
 
 .data%z120      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .data          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
 
 .data%z121      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/ventilador.o
 
 .data%z122      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 build/default/production/TftDriver/fan.o
-
-.data%z123      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 build/default/production/TftDriver/bulb.o
-
-.data%z124      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/bombilla.o
 
-.data%z125      0x0000000000000000        0x0
+.data%z123      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/sensor.o
 
-.data%z126      0x0000000000000000        0x0
+.data%z124      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/main.o
 
-.data%z127      0x0000000000000000        0x0
+.data%z125      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/UART.o
 
-.data%z128      0x0000000000000000        0x0
+.data%z126      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/Pic32Ini.o
+
+.data%z127      0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 build/default/production/TftDriver/fan.o
+
+.data%z128      0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 build/default/production/TftDriver/bulb.o
 
 .data%z129      0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 build/default/production/TftDriver/DefaultFonts.o
@@ -3843,28 +3843,28 @@ LOAD stack
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 
 .bss%z250       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+ .bss           0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
 
 .bss%z251       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
+ .bss           0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
 
 .bss%z252       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .bss           0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
 
 .bss%z253       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/production/ventilador.o
 
 .bss%z254       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 build/default/production/TftDriver/fan.o
-
-.bss%z255       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 build/default/production/TftDriver/bulb.o
-
-.bss%z256       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/production/bombilla.o
 
-.bss%z257       0x0000000000000000        0x0
+.bss%z255       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/production/Pic32Ini.o
+
+.bss%z256       0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 build/default/production/TftDriver/fan.o
+
+.bss%z257       0x0000000000000000        0x0
+ .bss           0x0000000000000000        0x0 build/default/production/TftDriver/bulb.o
 
 .bss%z258       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/production/TftDriver/DefaultFonts.o
@@ -4296,7 +4296,7 @@ LOAD stack
 .text.main_entry
                 0x000000009d00e774       0x54
  .text.main_entry
-                0x000000009d00e774       0x54 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+                0x000000009d00e774       0x54 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
                 0x000000009d00e7a8                __crt0_exit
 
 .text.__uflow   0x000000009d00e7c8       0x54
@@ -4851,13 +4851,13 @@ LOAD stack
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.35/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
 
 .text%z364      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccmkzNrE.o
+ .text          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccdH489H.o
 
 .text%z365      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccvxOu5N.o
+ .text          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccCgt1xw.o
 
 .text%z366      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccISwVh7.o
+ .text          0x0000000000000000        0x0 C:\Users\34648\AppData\Local\Temp\ccCs8mpv.o
 
 .text%z367      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 build/default/production/TftDriver/fan.o

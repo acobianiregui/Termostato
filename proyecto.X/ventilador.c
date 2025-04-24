@@ -5,7 +5,7 @@ int vel=0;
 
 float error_anterior = 0.0;
 float dt2 = 1.0; 
-float Kp2 = 50.0;            
+float Kp2 = 80.0;            
 float Kd2 = 0.1;   
 
 
