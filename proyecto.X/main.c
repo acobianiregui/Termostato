@@ -12,13 +12,13 @@
 #include "bombilla.h"
 #include "ventilador.h"
 //Funciones del main
-void initDisplay();
-void init1();
-int convertir_a_entero(const char* str, int* resultado);
-void interpretar_instruccion(const char* instruccion);
-char* recibir_cadena();
-void cambiaVentDisplay(int n);
-void cambiaBombiDisplay(int n);
+void init1();//Inicalizacion de pines básicos
+void initDisplay(); //Inicializa el fondo del display
+int convertir_a_entero(const char* str, int* resultado); //Conversiones para los comandos
+void interpretar_instruccion(const char* instruccion); //Interpreta las instrucciones del usuario
+char* recibir_cadena();//Devuelve la cadena que ha envia el usuario
+void cambiaVentDisplay(int n); //Actualiza el porcentaje de velocidad en el display
+void cambiaBombiDisplay(int n); //Actualiza el porcentaje de brillo en el display
 //Variables globales del main
 char mensaje_temp[32]={0};
 int modo_auto=0;
@@ -38,7 +38,6 @@ int main(){
     //Habilitar interrupciones
     INTCON |= (1<<12);
     asm("ei");
-    int act; int ant=(PORTB>>5)&1;
     char temp [TAMANO_COLA]={0};
     float t=0;
     int calor=0;
@@ -49,7 +48,6 @@ int main(){
         if (instruccion != NULL) {
             interpretar_instruccion(instruccion);
         }
-       act=(PORTB>>5)&1;
        //Actualización automatica en el display 
        if(existeMedia()){
            t=getTemperatura();
@@ -73,14 +71,7 @@ int main(){
                setVelocidad(frio);
            }
        }
-       if ((act!=ant)&&(act==0)){
-           t_deseada=24;
-           sprintf(temp,"%.2f",t);
-           putsUART(temp);
-           putsUART(" Celsius \n\r");
-           //setBrillo(100);
-       } 
-       ant=act;
+       
     }
 }
 
@@ -218,6 +209,10 @@ void interpretar_instruccion(const char* instruccion) {
                 print("OFF",55,90,0);
                 setFont(SmallFont);
                 asm("ei");   
+                setBrillo(0);
+                cambiaVentDisplay(0);
+                setVelocidad(0);
+                cambiaBombiDisplay(0);
             }
             modo_auto = 0;
             //Quito la temperatura deseada (en modo manual no hay)
@@ -296,6 +291,9 @@ void interpretar_instruccion(const char* instruccion) {
         if (strcmp(tipo, "V") == 0) {
             if (valor>100){
                 valor=100;
+            }
+            if (valor<50){
+                valor=0;
             }
             setVelocidad(valor);
             cambiaVentDisplay(valor);

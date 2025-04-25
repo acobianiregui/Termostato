@@ -17,13 +17,9 @@ static cola_circ cola_tx, cola_rx;
 void InicializarUART(int baudios){
     //Definimos puertos
     //U1RX a RB2 y U1TX a RA0
-    ANSELB &=~((1<<2)|(1<<13));
-    //ANSELC &=~(1<<6);
+    ANSELB &=~((1<<2));
     ANSELA &=~1;
-    //TRISA &=~(1<<2);
-    //TRISB&=~(1<<7);
     TRISB |=(1<<2);
-    //TRISC |=(1<<6);
     TRISA &=~1;
     LATA |=1;
     // Se desbloquean los registros

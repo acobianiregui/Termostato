@@ -44,9 +44,7 @@ int controlar_velocidad(float temperatura_deseada, float temperatura_actual){
         salida = 0.0;
     }
     int v = (salida >= 50.0) ? (int)salida : 0;
-    if (error>=1 &&v==0){
-        v+=50;
-    }
+    
     return v;
 }
 

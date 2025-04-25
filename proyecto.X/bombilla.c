@@ -18,7 +18,7 @@ void initBombilla(){
     RPC4R = 5;
     SYSKEY=0xFE0;
     
-    //Configuracion OC1
+    //Configuracion OC3
     OC3CON=0; //Primero apagado
     OC3R=2500;  // A DECIDIR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     OC3RS=2500;
@@ -82,11 +82,4 @@ void startBombilla(){
 void stopBombilla(){
     OC3CON &= ~0x8000;
     T2CON  &= ~0x8000;
-}
-int getBrillo(){
-    int sol;
-    asm("di");
-    sol=alto*100/PERIODO;
-    asm("ei");
-    return sol;
 }
